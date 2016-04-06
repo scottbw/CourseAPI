@@ -13,7 +13,7 @@ namespace CourseAPI.Models
         public String feeStatusCode;
 
         public CourseForStudent(String aos_code, String acad_year, String occurrence, String student)
-            :base(aos_code, acad_year, occurrence);
+            :base(aos_code, acad_year, occurrence)
         {
             this.personalisedFor = student;
             this.version = "Current";
@@ -21,7 +21,7 @@ namespace CourseAPI.Models
         }
         
         public CourseForStudent(String aos_code, String acad_year, String occurrence, String student, String time)
-            :base(aos_code, acad_year, occurrence);
+            :base(aos_code, acad_year, occurrence)
         {
             this.personalisedFor = student;
             this.version = "Current";
