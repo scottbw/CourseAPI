@@ -21,7 +21,7 @@ namespace CourseAPI.Models
             this.occurrenceCode = occurrence;
             this.customisedFor = "Anyone";
             this.version = "Current";
-            course_occurrence.areaOfStudyTypeCode = "C";
+            this.areaOfStudyTypeCode = "C";
         }
     }
 }
