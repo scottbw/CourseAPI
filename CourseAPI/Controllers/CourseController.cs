@@ -10,7 +10,6 @@ namespace CourseAPI.Controllers
 {
     public class CourseController : ApiController
     {
-DELIBERATELY BREAKING THE BUILD HERE!!!!
         // GET course/aos_code
         [Route("course/{aos_code}")]
         public IEnumerable<Course> GetCourse(String aos_code)
