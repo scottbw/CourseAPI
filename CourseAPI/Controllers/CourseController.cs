@@ -17,6 +17,7 @@ namespace CourseAPI.Controllers
         {
             List<Course> courses = new List<Course>();
             Course course_occurrence = new Course(aos_code, null, null);
+            course_occurrence.areaOfStudyTypeCode = "C";
             courses.Add(course_occurrence);
             return courses;
         }
@@ -28,6 +29,7 @@ namespace CourseAPI.Controllers
             List<Course> courses = new List<Course>();
             Course course_occurrence = new Course(aos_code, null, null);
             course_occurrence.version = version;
+            course_occurrence.areaOfStudyTypeCode = "C";
             courses.Add(course_occurrence);
             return courses;
         }

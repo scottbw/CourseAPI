@@ -12,6 +12,7 @@ namespace CourseAPI.Models
        public  String occurrenceCode;
         public String customisedFor;
         public String version;
+        public Strign areaOfStudyTypeCode;
 
         public Course(String aos_code, String acad_year, String occurrence)
         {
