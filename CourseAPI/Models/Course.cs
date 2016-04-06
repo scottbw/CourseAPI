@@ -7,10 +7,11 @@ namespace CourseAPI.Models
 {
     public class Course
     {
+        public String personalisedFor;
+        
         public String areaOfStudyCode;
         public String academicYear;
         public String occurrenceCode;
-        public String customisedFor;
         public String version;
         public String areaOfStudyTypeCode;
         public String parentAreaOfStudyCode;
@@ -32,7 +33,7 @@ namespace CourseAPI.Models
             this.areaOfStudyCode = aos_code;
             this.academicYear = acad_year;
             this.occurrenceCode = occurrence;
-            this.customisedFor = "Anyone";
+            this.personalisedFor = "Anyone";
             this.version = "Current";
             this.areaOfStudyTypeCode = "C";
         }
