@@ -21,8 +21,8 @@ namespace CourseAPI.Models
         public String qualificationAim;
         public String facultyCode;
         public String departmentCode;
-        public DateTime startDate;
-        public DateTime endDate;
+        public DateTime? startDate;
+        public DateTime? endDate;
         public int staffId = 0;
         public String attendanceMode;
         public String jacs;
