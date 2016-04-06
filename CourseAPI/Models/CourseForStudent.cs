@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CourseAPI.Models
 {
-    public class CourseForStudent extends Course
+    public class CourseForStudent : Course
     {
 
         public String enrolmentStageCode;
