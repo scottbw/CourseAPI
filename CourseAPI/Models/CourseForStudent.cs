@@ -12,7 +12,17 @@ namespace CourseAPI.Models
         public String enrolmentTypeCode;
         public String feeStatusCode;
 
-        public CourseForStudent(String student, String aos_code, String acad_year, String occurrence)
+        public CourseForStudent(String aos_code, String acad_year, String occurrence, String student)
+        {
+            this.areaOfStudyCode = aos_code;
+            this.academicYear = acad_year;
+            this.occurrenceCode = occurrence;
+            this.personalisedFor = student;
+            this.version = "Current";
+            this.areaOfStudyTypeCode = "C";
+        }
+        
+        public CourseForStudent(String aos_code, String acad_year, String occurrence, String student, String time)
         {
             this.areaOfStudyCode = aos_code;
             this.academicYear = acad_year;
