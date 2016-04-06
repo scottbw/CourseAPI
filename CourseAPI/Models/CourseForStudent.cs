@@ -14,9 +14,7 @@ namespace CourseAPI.Models
 
         public CourseForStudent(String aos_code, String acad_year, String occurrence, String student)
         {
-            this.areaOfStudyCode = aos_code;
-            this.academicYear = acad_year;
-            this.occurrenceCode = occurrence;
+            :base(aos_code, acad_year, occurrence);
             this.personalisedFor = student;
             this.version = "Current";
             this.areaOfStudyTypeCode = "C";
@@ -24,9 +22,7 @@ namespace CourseAPI.Models
         
         public CourseForStudent(String aos_code, String acad_year, String occurrence, String student, String time)
         {
-            this.areaOfStudyCode = aos_code;
-            this.academicYear = acad_year;
-            this.occurrenceCode = occurrence;
+            :base(aos_code, acad_year, occurrence);
             this.personalisedFor = student;
             this.version = "Current";
             this.areaOfStudyTypeCode = "C";
