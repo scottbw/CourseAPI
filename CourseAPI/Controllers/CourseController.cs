@@ -63,7 +63,7 @@ namespace CourseAPI.Controllers
         public IEnumerable<Course> GetCourseOccurrenceForStudent(String aos_code, String acad_period, String occurrence_code, String student)
         {
             List<Course> courses = new List<Course>();
-            Course course_occurrence = new CourseForStudent(student, aos_code, acad_period, occurrence_code);
+            Course course_occurrence = new CourseForStudent(aos_code, acad_period, occurrence_code, student);
             courses.Add(course_occurrence);
             return courses;
         }
@@ -84,7 +84,7 @@ namespace CourseAPI.Controllers
         public IEnumerable<Course> GetCourseOccurrenceForStudent(String aos_code, String acad_period, String occurrence_code, String student, String time)
         {
             List<Course> courses = new List<Course>();
-            Course course_occurrence = new CourseForStudent(student, aos_code, acad_period, occurrence_code);
+            Course course_occurrence = new CourseForStudent(aos_code, acad_period, occurrence_code, student, time);
             course_occurrence.version = time;
             courses.Add(course_occurrence);
             return courses;
