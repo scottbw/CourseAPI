@@ -16,8 +16,8 @@ namespace CourseAPI.Models
             :base(aos_code, acad_year, occurrence)
         {
             this.personalisedFor = student;
-            this.enromentStageCode = "EN";
-            this.enromentStatusCode = "STU";
+            this.enrolmentStageCode = "EN";
+            this.enrolmentStatusCode = "STU";
             this.enrolmentTypeCode = "";
             this.feeStatusCode = "OK";
         }
@@ -26,8 +26,8 @@ namespace CourseAPI.Models
             :base(aos_code, acad_year, occurrence)
         {
             this.personalisedFor = student;
-            this.enromentStageCode = "EN";
-            this.enromentStatusCode = "STU";
+            this.enrolmentStageCode = "EN";
+            this.enrolmentStatusCode = "STU";
             this.enrolmentTypeCode = "";
             this.feeStatusCode = "OK";
             this.version = time;
