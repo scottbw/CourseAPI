@@ -16,16 +16,21 @@ namespace CourseAPI.Models
             :base(aos_code, acad_year, occurrence)
         {
             this.personalisedFor = student;
-            this.version = "Current";
-            this.areaOfStudyTypeCode = "C";
+            this.enromentStageCode = "EN";
+            this.enromentStatusCode = "STU";
+            this.enrolmentTypeCode = "";
+            this.feeStatusCode = "OK";
         }
         
         public CourseForStudent(String aos_code, String acad_year, String occurrence, String student, String time)
             :base(aos_code, acad_year, occurrence)
         {
             this.personalisedFor = student;
-            this.version = "Current";
-            this.areaOfStudyTypeCode = "C";
+            this.enromentStageCode = "EN";
+            this.enromentStatusCode = "STU";
+            this.enrolmentTypeCode = "";
+            this.feeStatusCode = "OK";
+            this.version = time;
         }
     }
 }
